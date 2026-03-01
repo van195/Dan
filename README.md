@@ -1,4 +1,5 @@
  DanMini
+ 
 DanMini is an Excalibur-inspired mini soical midea like tiwtter app built with React and javascript. Dan Mini is built for those who believe in the beauty of ordinary moments.
 It's a space to:
 
@@ -28,6 +29,7 @@ Vitest + Testing Library – Unit testing
 insomina – End-to-end testing
 
 ✨ Features
+
 📝 Post Your Day – Share what you're doing, thinking, or feeling in the moment.
 
 🔁 Relate & Connect – If someone had the same day or experience as you, they can like or comment to show they relate.
@@ -37,6 +39,7 @@ insomina – End-to-end testing
 🧠 Minimal & Focused – No clutter, just real people sharing real life.
 
 🧠 The Process
+
 I started by sketching out the core idea behind Dan Mini — a space where people can share their daily routines, thoughts, and life updates, and connect with others who might be experiencing the same day.
 
 First, I built the authentication system so users could sign up, log in, and have their own profiles. This was the foundation — without it, nothing else would matter.
@@ -57,6 +60,7 @@ The more I built, the more I understood:
 We're not just sharing posts — we're sharing pieces of our lives. And when someone relates, even in silence, it creates a quiet kind of connection.
 
 📚 What I Learned
+
 🔁 Real-Time Interactions
 Implementing likes and comments in real time taught me how to think about state synchronization and user expectations. I had to ensure that when someone interacts with a post, everyone sees it instantly — no refresh needed.
 
