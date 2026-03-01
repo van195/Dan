@@ -1,0 +1,23 @@
+
+@import "../../style.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     
+}
+.home{
+  padding: 25px 20px;
+
+    @include themify($themes) {
+      background-color: themed("bgSoft");
+    }
+      @include mobile {
+      padding: 10px;
+    }
+
+    @include tablet{
+      padding: 20px;
+    }
+}

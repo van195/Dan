@@ -1,0 +1,21 @@
+.Conversatoin{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  
+}
+.Conversatoin:hover{
+    background-color: rgba(156, 154, 154, 0.075);
+}
+.ConversatoinImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.ConversatoinName{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}

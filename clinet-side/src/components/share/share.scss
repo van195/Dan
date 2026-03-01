@@ -1,0 +1,258 @@
+@import "../../style.scss";
+
+.share {
+  @include themify($themes) {
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    border-radius: 20px;
+    background-color: themed("bg");
+    color: themed("textColor");
+    margin-bottom: 20px;
+
+    .container-of-share-page{
+      padding: 20px;
+      .top-of-the-share-page{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-of-share-page{
+          display: flex;
+          align-items: center;
+          flex: 3;
+          img {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+             z-index: -1;
+          }
+
+          input {
+            border: none;
+            outline: none;
+            padding: 20px 10px;
+            background-color: transparent;
+            width: 60%;
+            color: themed("textColor");
+          }
+        }
+        .right-of-the-share-page{
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          .file {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 0px;
+          }
+        }
+      }
+
+      hr {
+        margin: 20px 0px;
+        border: none;
+        height: 0.5px;
+        background-color: themed("border");
+      }
+
+      .bottom-of-the-share-page{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left-the-bottom-page-of-post-container{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .item-of-share{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            img {
+              height: 20px;
+            }
+
+            span {
+              font-size: 12px;
+              color: gray;
+            }
+          }
+        }
+        .right-of-the-bottom-of-the-post-container {
+          button {
+            border: none;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+            background-color: #5271ff;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.profile{
+  @include themify($themes) {
+    background-color: themed("bgSoft");
+   
+
+    .images {
+      width: 100%;
+      height: 300px;
+      position: relative;
+      
+      
+      
+      .cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+         
+      }
+
+      .profilePic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 200px;
+        
+      }
+    }
+    .profileContainer {
+      padding: 20px 70px;
+    
+
+      @include mobile{
+        padding: 10px;
+      }
+
+      @include tablet{
+        padding: 20px;
+      }
+
+      .uInfo {
+       
+        height: 180px;/*
+        -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);*/
+        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+        border-radius: 20px;
+        background-color: themed("bg");
+        color: themed("textColor");
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        @include mobile{
+          flex-direction: column;
+          height: 30vh;
+          padding: 20px;
+          margin-top: 100px;
+        }
+
+        .left-of-myaccount{
+          
+          margin-top: 50px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
+          text-align: center;
+          gap: 10px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 20px;
+          font-weight:bold;
+          @include tablet{
+            flex-wrap: wrap;
+          }
+
+          a{
+            color: themed("textColorSoft");
+          }
+        }
+
+        .center {
+            margin-top: 65px;
+           
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+
+          span {
+            font-size: 30px;
+            font-weight: 500;
+          }
+
+          .info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .item {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              color: themed("textColorSoft");
+
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+          button {
+            border: none;
+            background-color: #5271ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+
+        .right-of-profile-of-my-account{
+            margin-top: 37px;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content:space-between;
+          flex-direction: column;
+          height: 50px;
+          width: 150px;
+          gap: 10px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 20px;
+          font-weight:bold;
+          
+        }
+       
+      }
+       .the-right-corner-of-dots{
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+  }
+}

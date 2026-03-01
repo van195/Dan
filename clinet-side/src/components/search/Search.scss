@@ -1,0 +1,118 @@
+
+
+
+.-search-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    background-color:#fff;
+    color:#000;
+    z-index: 100;
+
+    border-bottom: 1px solid #5e5d5d5d;
+    
+  }
+
+ .the-social-link-one-of-serach-page{
+        text-decoration: none;
+  }
+.the-social-link-one-of-serach-page span{
+      font-weight: bold;
+      font-size: 20px;
+      color:#000 ;
+}
+.left-side-of-navbar-but-now-for-search{
+ display: flex;
+ align-items: center;
+ gap:30px ;
+}
+.right-side-of-navbar-of-search-page{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}  
+.myaccount-link-of-search{
+ color: rgba(50, 50, 50, 0.498);
+ width: 100px;
+ height: 40px;
+ text-decoration:none;
+ align-items: center;
+ display: flex;
+ gap: 10px;
+ background-color: rgba(225, 225, 225, 0.315);
+ border-radius:13px;
+}
+.the-text-chat-one-of-search-page{
+ color: #000;
+}   
+.myaccount-link:hover{
+ border-radius:13px;
+ background-color: rgba(196, 195, 195, 0.315);
+}
+.myaccount-link-of-search img{ 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-of-search-page{
+display: flex;
+align-items: center;
+gap: 10px;
+font-weight: 500; 
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+.summery-part-the-search{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.the-search-of-friend{
+    
+    margin: 30px;
+    padding: 30px;
+    width:40%;
+    height: 20%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(14, 14, 14, 0.105);
+}
+.the-search-of-friend:hover{
+    background-color: #d3d2d217;
+}
+.dispaly-part-of-search-page{
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+   gap: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dispaly-part-of-search-page img{
+    width: 55px;
+    height:55px;
+    border-radius: 50%;
+}
+.search-of-search-page{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ border: 1px solid #5858587a;
+ border-radius: 5px;
+ padding: 5px;
+}
+input{
+border:none;
+outline: none;
+width: 600px;
+background-color: transparent;
+color:#000;
+}

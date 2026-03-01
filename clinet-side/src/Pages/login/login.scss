@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.login{
+    background: linear-gradient(180deg,#00000042,#ffffff53) ,url("../../assets/background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+    width: 700px;
+    height: 450px;
+    display:flex ;
+    justify-content: space-between;
+    border-radius:20px ;
+    box-shadow: 5px 5px 10px rgba(79, 79, 79, 0.338);
+    min-height: 400px;
+}
+.left{
+  border-top-left-radius:20px ;
+  border-bottom-left-radius:20px ;
+  padding: 30px 20px;
+  background:linear-gradient(120deg,#00000083,#ffffff53),url("../../assets/traditional.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  text-align: center;
+  width: 50%;
+  display:flex ;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #f0ececa1;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 1;
+}
+.left .the-image-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     color: #fff;
+}
+.left .get-access{
+   color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left  .register{
+    color: #fff;
+    padding: 5px 130px;
+   background-color: transparent;
+   border: 1px solid rgba(108, 104, 117, 0.589);
+   border-radius:6px ;
+   box-shadow: 5px 5px 10px rgba(152, 148, 148, 0.564);
+}
+.right-of-login{
+    background:linear-gradient(90deg,#ffffff53,#0000006b),url("../../assets/signupbox.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 20px;
+   text-align: center;
+   width: 50%;
+   height: 100%;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+  display:flex ;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.right-of-login input{
+    width: 85%;
+    height: 40px;
+    outline: none;
+    padding-left:20px ;
+    border: none;
+    border-bottom: 1px solid #747474;
+     transition: .4s ease-out;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+.right-of-login .loginbnt{
+   padding: 5px 130px;
+   background-color: #D39A6A;
+   border: none;
+   border-radius:6px ;
+   box-shadow: 5px 5px 10px rgba(79, 79, 79, 0.338);
+   transition: .4s ease-out;
+    &:hover{
+        transform: scale(1.08);
+    }
+}
+.right-of-login span .the-link-one{
+  text-decoration: none;
+  color: rgb(59, 59, 58);
+}
+.right-of-login span .the-link-one:hover{
+text-decoration: underline;
+}
+/*
+.right form{
+   display:flex ;
+  justify-content: space-between; 
+   flex-direction: column;
+
+}*/

@@ -1,0 +1,57 @@
+.Message{
+   
+    display: flex; 
+    
+    align-items: flex-end;
+   
+}
+.message-top{
+    display: flex;
+    gap: 10px;
+}
+.messageImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.messageText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    max-width: 250px;
+    width: 202px;
+    height: 30px;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+    background-color: #837d7d21;
+    
+}
+.message-bottom{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    margin-top:0px;
+}
+.Message.own{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+.Message.own .messageImg{
+   display: none;
+}
+.Message.own .messageText{
+    background-color: #24202079;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+.Message.own .message-bottom{
+     margin-top:0px;
+}

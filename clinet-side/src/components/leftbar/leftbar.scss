@@ -1,0 +1,176 @@
+@import "../../style.scss";
+
+.the-leftbar{
+  @include themify($themes) {
+    flex: 2;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: themed("bgSoft");
+    color: themed("textColor");
+    box-shadow: 5px 5px 10px rgba(92, 91, 91, 0.082);
+    
+
+    @include mobile{
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container{
+      padding: 20px;
+     
+      .event-clikc{
+            text-decoration: none;
+            color: themed("textColor");
+           }
+          .the-page-of-explore{
+            text-decoration: none;
+            color: themed("textColor");;
+           }
+
+      hr {
+        margin: 20px 0px;
+        border: none;
+        height: 0.5px;
+        background-color: themed("border");
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+          font-size: 12px;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px;
+          background-color: #b3b2b230;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s ease-out;
+          img {
+            width: 30px;
+          }
+          
+          span {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+
+        .item:hover{
+          padding: 12px;
+          border-radius: 5px;
+          background-color: #35343420;
+        }
+        .item.selected {
+          
+          background-color: #3a3a3a5f;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s ease-out;
+          img {
+            width: 30px;
+          }
+          
+          span {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFF;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*.the-leftbar{
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    border-right: 1px solid #5b5b5b6b;
+
+    &::-webkit-scrollbar{
+        display:none;
+    }
+ 
+   .container{
+        padding: 20px;
+        hr{
+            margin: 20px 0px;
+            border: none;
+            height: 0.5px;
+            background-color: lightgray;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          span{
+            font-size: 12px;
+          }
+           .user{
+             display: flex;
+             align-items: center;
+             gap: 10px;
+             img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+
+             }
+
+             span{
+
+             }
+
+
+           }
+           .item{
+              display: flex;
+             align-items: center;
+             gap: 10px;
+             img{
+              width: 30px;
+             }
+
+             span{
+               font-size: 14px;
+             }
+
+           }
+        }
+   } 
+}*/
