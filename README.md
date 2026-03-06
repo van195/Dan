@@ -73,3 +73,7 @@ Structuring posts, users, and interactions in the database made me think deeply 
 💡 The Power of Intent
 The biggest takeaway? Features are just tools. What really matters is the intent behind them. A like button can be just a button — or it can be a way of saying, "Me too."
 
+
+https://github.com/user-attachments/assets/33f57aea-4495-456a-bd7b-7671dd49fdf8
+
+
